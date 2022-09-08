@@ -1,0 +1,16 @@
+.footer {
+    height: 62px;
+    display: block;
+    // margin-top: auto;
+    margin-left: 252px;
+    width: calc(100% - 252px);
+    background: #F2F2F5;
+    &__text {
+        padding-top: 21px;
+        padding-left: 38px;        
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        color: #74788D;
+    }
+}

@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    // position: fixed;
+    height: 70px;
+    padding: 17px 56px 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    background: #fff;
+    &__img {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 14px;
+        top: 21px
+    }
+    &__user {
+        display: flex;
+
+        &__text {
+            &__name {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: #555B6D;
+            }
+            &__job {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+
+                color: #ADB5BD;
+
+            }
+        }
+        &__rounded {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 36px;
+            height: 36px;
+            background: #556EE6;
+            border-radius: 100%;
+            color: #fff; 
+            margin-right: 14px;
+        }
+    }
+}
