@@ -1,6 +1,7 @@
+import { showModal } from '../../utils/modal';
 import './table-header.scss'
 
-const TableHeader = () => {
+const TableHeader = ({setModalStyle}) => {
     return (
 
         <div className="table__wrapper__header">
@@ -8,7 +9,7 @@ const TableHeader = () => {
                 <div className="table__wrapper__header__item__text">Поиск по делам :</div>
                 <input className = "table__wrapper__header__item__input" type="text" required/>
             </div>
-            <button className = "table__wrapper__header__button">Создать дело</button>
+            <button onClick={() => showModal(setModalStyle)} className = "table__wrapper__header__button">Создать дело</button>
         </div>
         
     )

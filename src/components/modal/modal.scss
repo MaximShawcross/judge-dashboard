@@ -1,0 +1,123 @@
+.modal {
+    display: none;
+    margin: 30px auto;
+    width: 950px;
+    position: fixed;
+    z-index: 22;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    &__shadow {
+        position: fixed;
+        border:none;
+        display: block;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 98;
+        opacity: 0;
+        transition: opacity 0.15s ease;
+        background-color: black;
+    }
+    &__header {
+        // width: 100%;
+        height: 120px;
+        padding: 63px 0 46px 53px;
+        background: rgba(85, 110, 230, 0.25);
+        color: #556EE6;
+        font-weight: 500;
+        font-size: 24px;
+        // line-height: 36px;  
+    } 
+    &__content {
+        padding: 37px 37px 37px 42px;
+        background: #fff;
+        display: flex;
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+            height: 40px;
+            margin-top: 12px;
+            &__text {
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 20px;
+                color: #495057;
+                align-self: center;
+                &_title {
+                    font-weight: 800;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #495057;
+                }
+            }
+            &__input {
+                width: 250px;
+                height: 36px;
+                background: #FFFFFF;
+                border: 1px solid #CED4DA;
+                border-radius: 4px;
+                padding-left: 15px;
+            }
+            &__wrapper {
+                display: flex;
+                margin-right: 99px;
+                align-items: center;
+                &__checkbox {
+                    margin-right: 20px;
+                }
+            }
+            &__btns {
+                margin-top: 16px;
+                &__create {
+                    width: 128px;
+                    height: 36px;
+                    background: #556EE6;
+                    border: 1px solid #556EE6;
+                    border-radius: 4px;
+                    color: #fff;
+                    cursor: pointer;
+
+                }
+                &__back {
+                    cursor: pointer;
+                    width: 102px;
+                    height: 36px;
+                    background: #74788D;
+                    border: 1px solid #74788D;
+                    border-radius: 4px;
+                    color: #fff;
+                    margin-right: 16px;
+                }
+            }
+        }:nth-child(1) {
+            margin-top: 0;
+        }
+        &__right {
+            padding-left: 27px;
+        }
+        &__left {
+            padding-right: 27px;
+        }
+        &__complainant {
+            margin-top: 38px;
+        }
+        &__respondent {
+            margin-top: 88px;
+        }
+        
+    }
+}
+
+.modal_show {
+    display: block;
+}
+

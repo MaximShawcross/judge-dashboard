@@ -1,6 +1,5 @@
 import TableItem from '../table-item/table-item';
 import './table.scss'
-import pencil from "../../resources/pencil.png";
 import arrows from "../../resources/arrow.png";
 
 const Table = () => {

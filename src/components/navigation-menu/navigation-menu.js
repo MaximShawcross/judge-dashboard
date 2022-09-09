@@ -1,6 +1,8 @@
 import './navigation-menu.scss'
 
 const NavigationMenu = () => {
+    
+
     return (
         <nav className="nav">
         <div className="nav__wrapper">
